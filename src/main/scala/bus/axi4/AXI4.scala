@@ -1,12 +1,11 @@
 // See LICENSE.SiFive for license details.
 
-package bus.axi4
+package oscpu.nutshell.bus.axi4
 
 import chisel3._
 import chisel3.util._
-
-import nutcore.HasNutCoreParameter
-import utils._
+import oscpu.nutshell.nutcore.HasNutCoreParameter
+import oscpu.nutshell.utils._
 
 object AXI4Parameters extends HasNutCoreParameter {
   // These are all fixed by the AXI4 standard:

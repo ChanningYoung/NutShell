@@ -14,17 +14,16 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package system
-
-import nutcore._
-import bus.axi4.{AXI4, AXI4Lite}
-import bus.simplebus._
-import device.{AXI4CLINT, AXI4PLIC}
-import top.Settings
+package oscpu.nutshell.system
 
 import chisel3._
 import chisel3.util._
 import chisel3.util.experimental.BoringUtils
+import oscpu.nutshell.bus.axi4.{AXI4, AXI4Lite}
+import oscpu.nutshell.bus.simplebus._
+import oscpu.nutshell.device.{AXI4CLINT, AXI4PLIC}
+import oscpu.nutshell.nutcore._
+import oscpu.nutshell.top.Settings
 
 trait HasSoCParameter {
   val EnableILA = Settings.get("EnableILA")

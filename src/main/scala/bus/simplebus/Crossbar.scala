@@ -14,12 +14,11 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package bus.simplebus
+package oscpu.nutshell.bus.simplebus
 
 import chisel3._
 import chisel3.util._
-
-import utils._
+import oscpu.nutshell.utils._
 
 class SimpleBusCrossbar1toN(addressSpace: List[(Long, Long)]) extends Module {
   val io = IO(new Bundle {

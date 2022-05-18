@@ -14,15 +14,14 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package bus.simplebus
+package oscpu.nutshell.bus.simplebus
 
 import chisel3._
 import chisel3.util._
-
-import nutcore.HasNutCoreParameter
-import utils._
-import bus.axi4._
-import bus.memport._
+import oscpu.nutshell.bus.axi4._
+import oscpu.nutshell.bus.memport._
+import oscpu.nutshell.nutcore.HasNutCoreParameter
+import oscpu.nutshell.utils._
 
 sealed abstract class SimpleBusBundle extends Bundle with HasNutCoreParameter
 

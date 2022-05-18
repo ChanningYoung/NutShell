@@ -14,12 +14,12 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package top
+package oscpu.nutshell.top
 
-import nutcore._
-import bus.simplebus._
-import device._
-import utils._
+import oscpu.nutshell.nutcore._
+import oscpu.nutshell.bus.simplebus._
+import oscpu.nutshell.device._
+import oscpu.nutshell.utils._
 
 import chisel3._
 import chisel3.util._

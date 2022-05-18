@@ -14,14 +14,13 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package sim
+package oscpu.nutshell.sim
 
 import chisel3._
 import chisel3.util._
-
-import device._
-import bus.axi4._
-import utils._
+import oscpu.nutshell.bus.axi4._
+import oscpu.nutshell.device._
+import oscpu.nutshell.utils._
 
 class DiffTestCtrlIO extends Bundle {
   val enable = Output(Bool())

@@ -14,14 +14,13 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package sim
+package oscpu.nutshell.sim
 
 import chisel3._
 import chisel3.util._
-
-import bus.simplebus._
-import bus.axi4._
-import device._
+import oscpu.nutshell.bus.axi4._
+import oscpu.nutshell.bus.simplebus._
+import oscpu.nutshell.device._
 
 class SimMMIO extends Module {
   val io = IO(new Bundle {

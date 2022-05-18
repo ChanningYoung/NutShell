@@ -14,13 +14,11 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package nutcore
+package oscpu.nutshell.nutcore
 
 import chisel3._
 import chisel3.util._
 import chisel3.util.experimental.BoringUtils
-
-import utils._
 
 trait HasRegFileParameter {
   val NRReg = 32

@@ -14,12 +14,10 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package bus.memport
+package oscpu.nutshell.bus.memport
 
 import chisel3._
 import chisel3.util._
-
-import nutcore.HasNutCoreParameter
 
 trait MemoryOpConstants
 {

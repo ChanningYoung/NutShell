@@ -14,13 +14,11 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package bus.simplebus
+package oscpu.nutshell.bus.simplebus
 
 import chisel3._
 import chisel3.util._
-
-import utils._
-import nutcore.HasNutCoreParameter
+import oscpu.nutshell.nutcore.HasNutCoreParameter
 
 class SimpleBusAddressMapper(map: (Int, Long)) extends Module with HasNutCoreParameter {
   val io = IO(new Bundle {

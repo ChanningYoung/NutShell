@@ -14,14 +14,11 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package bus.simplebus
+package oscpu.nutshell.bus.simplebus
 
 import chisel3._
 import chisel3.util._
-
-import bus.memport._
-import utils._
-import bus.memport.MemoryOpConstants
+import oscpu.nutshell.bus.memport._
 
 object MemPortConsts extends MemoryOpConstants{}
 

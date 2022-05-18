@@ -14,14 +14,13 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package utils
+package oscpu.nutshell.utils
 
 import chisel3._
 import chisel3.util._
 import chisel3.util.experimental.BoringUtils
-import utils.LogLevel.LogLevel
-
-import nutcore.NutCoreConfig
+import oscpu.nutshell.nutcore.NutCoreConfig
+import oscpu.nutshell.utils.LogLevel.LogLevel
 
 object LogLevel extends Enumeration {
   type LogLevel = Value

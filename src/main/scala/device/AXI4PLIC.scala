@@ -14,13 +14,12 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package device
+package oscpu.nutshell.device
 
 import chisel3._
 import chisel3.util._
-
-import bus.axi4._
-import utils._
+import oscpu.nutshell.bus.axi4._
+import oscpu.nutshell.utils._
 
 class PlicIO(val nrIntr: Int, val nrHart: Int) extends Bundle {
   val intrVec = Input(UInt(nrIntr.W))

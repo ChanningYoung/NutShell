@@ -14,19 +14,17 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package sim
-
-import system._
-import nutcore.NutCoreConfig
+package oscpu.nutshell.sim
 
 import chisel3._
 import chisel3.util._
 import chisel3.util.experimental.BoringUtils
 
-import bus.axi4._
-import device.AXI4RAM
-import nutcore._
-import utils.GTimer
+import oscpu.nutshell.system._
+import oscpu.nutshell.bus.axi4._
+import oscpu.nutshell.device.AXI4RAM
+import oscpu.nutshell.nutcore.NutCoreConfig
+import oscpu.nutshell.utils.GTimer
 
 class DiffTestIO extends Bundle {
   val r = Output(Vec(32, UInt(64.W)))

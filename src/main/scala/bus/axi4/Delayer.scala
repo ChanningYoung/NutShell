@@ -1,10 +1,10 @@
 // See LICENSE.SiFive for license details.
 
-package bus.axi4
+package oscpu.nutshell.bus.axi4
 
 import chisel3._
 import chisel3.util._
-import utils._
+import oscpu.nutshell.utils._
 
 class AXI4Delayer[T <: AXI4Lite](latency: Int = 0, _type: T = new AXI4) extends Module {
   val io = IO(new Bundle{

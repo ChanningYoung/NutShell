@@ -14,14 +14,13 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package nutcore
+package oscpu.nutshell.nutcore
 
 import chisel3._
 import chisel3.util._
 import chisel3.util.experimental.BoringUtils
-
-import utils._
-import top.Settings
+import oscpu.nutshell.top.Settings
+import oscpu.nutshell.utils._
 
 class TableAddr(val idxBits: Int) extends NutCoreBundle {
   val padLen = if (Settings.get("IsRV32") || !Settings.get("EnableOutOfOrderExec")) 2 else 3

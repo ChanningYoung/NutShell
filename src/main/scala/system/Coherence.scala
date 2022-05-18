@@ -14,14 +14,13 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package system
+package oscpu.nutshell.system
 
 import chisel3._
 import chisel3.util._
 
-import utils._
-import bus.simplebus._
-import nutcore.HasNutCoreParameter
+import oscpu.nutshell.bus.simplebus._
+import oscpu.nutshell.nutcore.HasNutCoreParameter
 
 trait HasCoherenceParameter extends HasNutCoreParameter {
   val supportCoh = HasDcache

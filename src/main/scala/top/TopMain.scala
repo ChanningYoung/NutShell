@@ -14,14 +14,14 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package top
+package oscpu.nutshell.top
 
-import nutcore.NutCoreConfig
-import system.NutShell
-import device.{AXI4VGA}
-import sim.NutShellSimTop
 
 import chisel3._
+import oscpu.nutshell.system.NutShell
+import oscpu.nutshell.device.AXI4VGA
+import oscpu.nutshell.nutcore.NutCoreConfig
+import oscpu.nutshell.sim.NutShellSimTop
 
 class Top extends Module {
   val io = IO(new Bundle{})

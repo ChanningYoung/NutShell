@@ -14,16 +14,15 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package system
-
-import nutcore.{NutCore, NutCoreConfig, HasNutCoreParameter, AddressSpace, Cache, CacheConfig}
-import bus.axi4.{AXI4, AXI4Lite}
-import bus.simplebus._
-import utils._
+package oscpu.nutshell.system
 
 import chisel3._
 import chisel3.util._
 import chisel3.util.experimental.BoringUtils
+import oscpu.nutshell.bus.axi4.{AXI4, AXI4Lite}
+import oscpu.nutshell.bus.simplebus._
+import oscpu.nutshell.nutcore.{NutCore, NutCoreConfig, HasNutCoreParameter, AddressSpace, Cache, CacheConfig}
+import oscpu.nutshell.utils._
 
 trait HasPrefetcherParameter extends HasNutCoreParameter {
   val supportPrefetch = HasDcache

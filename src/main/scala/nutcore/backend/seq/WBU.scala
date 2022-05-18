@@ -14,12 +14,12 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package nutcore
+package oscpu.nutshell.nutcore
 
 import chisel3._
 import chisel3.util._
 import chisel3.util.experimental.BoringUtils
-import utils._
+import oscpu.nutshell.utils._
 
 class WBU(implicit val p: NutCoreConfig) extends NutCoreModule{
   val io = IO(new Bundle {

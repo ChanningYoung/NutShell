@@ -14,14 +14,13 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package device
+package oscpu.nutshell.device
 
 import chisel3._
 import chisel3.util._
 import chisel3.util.experimental.BoringUtils
-
-import bus.axi4._
-import utils._
+import oscpu.nutshell.bus.axi4._
+import oscpu.nutshell.utils._
 
 class ClintIO extends Bundle {
   val mtip = Output(Bool())

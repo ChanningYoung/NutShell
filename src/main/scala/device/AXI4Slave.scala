@@ -14,14 +14,13 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package device
+package oscpu.nutshell.device
 
 import chisel3._
 import chisel3.util._
-
-import nutcore.HasNutCoreParameter
-import bus.axi4._
-import utils._
+import oscpu.nutshell.bus.axi4._
+import oscpu.nutshell.nutcore.HasNutCoreParameter
+import oscpu.nutshell.utils._
 
 abstract class AXI4SlaveModule[T <: AXI4Lite, B <: Data](_type :T = new AXI4, _extra: B = null)
   extends Module with HasNutCoreParameter {

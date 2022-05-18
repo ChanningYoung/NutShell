@@ -14,7 +14,7 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package top
+package oscpu.nutshell.top
 
 object DefaultSettings {
   def apply() = Map(

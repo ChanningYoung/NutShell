@@ -14,14 +14,14 @@
 * See the Mulan PSL v2 for more details.  
 ***************************************************************************************/
 
-package nutcore
+package oscpu.nutshell.nutcore
 
 import chisel3._
 import chisel3.util._
 import chisel3.util.experimental.BoringUtils
 
-import utils._
-import top.Settings
+import oscpu.nutshell.top.Settings
+import oscpu.nutshell.utils._
 
 object CSROpType {
   def jmp  = "b000".U

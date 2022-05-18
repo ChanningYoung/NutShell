@@ -30,7 +30,7 @@ name := "NutShell"
 
 version := "3.1.1"
 
-scalaVersion := "2.11.12"
+scalaVersion := "2.12.10"
 
 crossScalaVersions := Seq("2.11.12", "2.12.4")
 
@@ -45,8 +45,8 @@ val defaultVersions = Map(
   "chisel-iotesters" -> "[1.2.5,1.3-SNAPSHOT["
   )
 
-libraryDependencies ++= Seq("chisel3","chisel-iotesters").map {
-  dep: String => "edu.berkeley.cs" %% dep % sys.props.getOrElse(dep + "Version", defaultVersions(dep)) }
+// libraryDependencies ++= Seq("chisel3","chisel-iotesters").map {
+//  dep: String => "edu.berkeley.cs" %% dep % sys.props.getOrElse(dep + "Version", defaultVersions(dep)) }
 
 libraryDependencies += "net.java.dev.jna" % "jna" % "4.0.0"
 
